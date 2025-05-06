@@ -1437,6 +1437,17 @@ onMounted(() => {
           </template>
         </el-cascader>
       </el-form-item>
+      <!-- 备注 -->
+      <el-form-item :label="$t('stepDetail.remark')" prop="remark">
+        <el-input
+          v-model="step.remark"
+          :placeholder="$t('stepDetail.remarkPlaceholder')"
+          maxlength="255"
+          show-word-limit
+          type="textarea"
+          :rows="2"
+        />
+      </el-form-item>
     </div>
 
     <el-divider>

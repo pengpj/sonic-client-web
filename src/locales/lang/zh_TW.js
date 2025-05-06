@@ -1573,6 +1573,8 @@ const stepDetail = {
   windowWidth: 'windowWidth',
   wait: '等待',
   WebviewName: 'webview名称',
+  remark: '備註',
+  remarkPlaceholder: '請輸入備註',
 };
 export default {
   message: {

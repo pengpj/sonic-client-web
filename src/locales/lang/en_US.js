@@ -1672,6 +1672,8 @@ const stepDetail = {
   windowWidth: 'window Width',
   wait: 'Wait',
   WebviewName: 'Webview Name',
+  remark: 'Remark',
+  remarkPlaceholder: 'Please enter remark',
 };
 export default {
   message: {

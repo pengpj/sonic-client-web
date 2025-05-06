@@ -289,8 +289,21 @@ const addStepTotarget = (id, toNext) => {
                 flex: 0 0 245px;
                 text-align: right;
                 margin-right: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
               "
             >
+              <el-tooltip
+                v-if="s.remark"
+                :content="s.remark"
+                placement="top"
+                :show-after="500"
+              >
+                <div style="max-width: 200px; margin-right: 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #909399; font-size: 13px;">
+                  {{ s.remark.length > 20 ? s.remark.substring(0, 20) + '...' : s.remark }}
+                </div>
+              </el-tooltip>
               <el-switch
                 v-model="s.disabled"
                 :active-value="0"

@@ -1575,6 +1575,8 @@ const stepDetail = {
   windowWidth: 'windowWidth',
   wait: '等待',
   WebviewName: 'webview名称',
+  remark: '備考',
+  remarkPlaceholder: '備考を入力してください',
 };
 export default {
   message: {
